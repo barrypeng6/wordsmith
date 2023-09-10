@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp-argocd
+spec:
+  project: default
+  sources:
+    - repoURL: https://github.com/barrypeng6/wordsmith.git
+      targetRevision: HEAD
+      path: api
+    - repoURL: https://github.com/barrypeng6/wordsmith.git
+      targetRevision: HEAD
+      path: web
+  destination:
+    namespace: api
+    server: https://kubernetes/default/svc

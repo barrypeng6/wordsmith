@@ -12,5 +12,5 @@ spec:
       targetRevision: HEAD
       path: web
   destination:
-    namespace: api
+    namespace: myapp
     server: https://kubernetes/default/svc

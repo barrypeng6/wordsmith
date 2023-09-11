@@ -4,13 +4,10 @@ metadata:
   name: myapp-argocd
 spec:
   project: default
-  sources:
-    - repoURL: https://github.com/barrypeng6/wordsmith.git
-      targetRevision: HEAD
-      path: k8s-manifests
-    - repoURL: https://github.com/barrypeng6/wordsmith.git
-      targetRevision: HEAD
-      path: k8s-manifests
+  source:
+    repoURL: https://github.com/barrypeng6/wordsmith.git
+    targetRevision: HEAD
+    path: k8s-manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp

@@ -37,6 +37,8 @@ spec:
           volumeMounts:
             - name: db-schema
               mountPath: /docker-entrypoint-initdb.d
+        imagePullSecrets:
+          - name: container-registry-key
       volumes:
         - name: db-schema
           configMap:

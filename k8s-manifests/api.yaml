@@ -20,7 +20,7 @@ metadata:
   labels:
     app: api
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: api
@@ -29,8 +29,8 @@ spec:
       labels:
         app: api
     spec:
-      imagePullSecrets:
-        - name: ghcr-registry-secret
+      # imagePullSecrets:
+      #   - name: ghcr-registry-secret
       containers:
         - name: api
           image: ghcr.io/barrypeng6/wordsmith-api

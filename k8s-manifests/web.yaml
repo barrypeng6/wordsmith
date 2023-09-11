@@ -28,8 +28,8 @@ spec:
       labels:
         app: web
     spec:
-      imagePullSecrets:
-        - name: ghcr-registry-secret
+      # imagePullSecrets:
+      #   - name: ghcr-registry-secret
       containers:
         - name: web
           image: ghcr.io/barrypeng6/wordsmith-web

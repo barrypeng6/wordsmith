@@ -21,8 +21,8 @@ jobs:
 
       - name: 'Build & Push Web Image'
         run: |
-          docker build ./web --tag ghcr.io/barrypeng6/wordsmith-web:latest
-          docker push ghcr.io/barrypeng6/wordsmith-web:latest
+          docker build ./web --tag ghcr.io/barrypeng6/wordsmith-web:v1.0
+          docker push ghcr.io/barrypeng6/wordsmith-web:v1.0
       - name: 'Build & Push API Image'
         run: |
           docker build ./api --tag ghcr.io/barrypeng6/wordsmith-api:latest

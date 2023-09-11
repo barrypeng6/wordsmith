@@ -29,6 +29,8 @@ spec:
       labels:
         app: api
     spec:
+      imagePullSecrets:
+        - name: ghcr-registry-secret
       containers:
         - name: api
           image: ghcr.io/barrypeng6/wordsmith-api

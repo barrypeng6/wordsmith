@@ -34,3 +34,5 @@ spec:
           ports:
             - containerPort: 80
               name: web
+      imagePullSecrets:
+        - name: container-registry-key

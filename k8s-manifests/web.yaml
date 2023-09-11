@@ -9,7 +9,7 @@ spec:
     - port: 8080
       nodePort: 30390
       targetPort: 80
-      name: web
+      name: http
   selector:
     app: web
   type: NodePort

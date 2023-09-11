@@ -36,4 +36,4 @@ spec:
             - containerPort: 8080
               name: api
       imagePullSecrets:
-        - name: container-registry-key
+        - name: regcred

@@ -33,7 +33,7 @@ spec:
       #   - name: ghcr-registry-secret
       containers:
         - name: web
-          image: ghcr.io/barrypeng6/wordsmith-web
+          image: ghcr.io/barrypeng6/wordsmith-web:v1.0
           ports:
             - containerPort: 80
               name: web
